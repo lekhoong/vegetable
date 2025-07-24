@@ -10,7 +10,7 @@ use App\Http\Middleware\Admin;
 use App\Http\Middleware\checkAuth;
 
 Route::controller(ViewController::class)->group(function () {
-    Route::get('/', 'index')->name('index');  
+    Route::get('/vegetable', 'index')->name('index');  
     Route::get('/login', 'showLoginForm')->name('login');
     Route::get('/register', 'create')->name('register');
     Route::get('/juice', 'showJuiceForm')->name('juice');
